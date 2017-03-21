@@ -37,8 +37,7 @@ public class TwitterServiceSpringSocialTest {
     private TwitterServiceSpringSocial service;
 
     @Before
-    public void initMocks() {
-        MockitoAnnotations.initMocks(this);
+    public void setup() {
         service = new TwitterServiceSpringSocial(template, twitter);
         ReflectionTestUtils.setField(service, "count", 10);
         ReflectionTestUtils.setField(service, "screenName", "salesforce");
