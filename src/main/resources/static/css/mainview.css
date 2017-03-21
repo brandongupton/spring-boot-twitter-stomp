@@ -1,0 +1,91 @@
+body {
+    padding-top: 70px;
+    background: #e1e8ed;
+}
+
+div.panel-filter {
+    background: #66757f;
+}
+
+.filter-label {
+    font-size: 25px;
+    color: #ffffff;
+    vertical-align: middle;
+    padding: 5px 10px 0 0;
+}
+
+div.form-group {
+    margin: 5px 10px;
+}
+
+#filter-text {
+    background-color: #ffffff;
+}
+
+button#filter-submit {
+    color: #ffffff;
+    background-color: #292f33;
+}
+
+button#filter-reset {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+div.panel-default>.panel-body {
+    padding: 10px 5px 3px 5px;
+    background-color: #ffffff;
+    color: #292f33;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.panel-warning>.panel-heading {
+    background-color: #292f33;
+    color:#ffffff;
+}
+
+.row.header {
+    margin-bottom: 5px;
+}
+.user-name {
+    margin-top: 0px;
+    margin-bottom: 3px;
+}
+
+.user-handle {
+    color: #55acee;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.retweet {
+    margin: 0;
+    text-align: center;
+}
+
+.retweet>small, .retweet-count {
+    margin: 0px 5px 100px 5px;
+}
+
+.profile-img {
+    margin-left: 10px;
+}
+
+.status-content {
+    padding: 5px 20px;
+}
+
+@media (max-width:767px) {
+    .filter-label {
+        margin-bottom: 0;
+    }
+    .user-info {
+        text-align: center;
+    }
+
+    button {
+        margin-top: 5px;
+    }
+}
