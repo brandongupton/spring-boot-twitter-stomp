@@ -26,11 +26,11 @@ public class TwitterServiceSpringSocial {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TwitterServiceSpringSocial.class);
 
-    @Value("${api.count:10}")
-    private Integer apiCount;
+    @Value("${count:10}")
+    private Integer count;
 
-    @Value("${api.screenname:@salesforce}")
-    private String apiScreenName;
+    @Value("${screenName:@salesforce}")
+    private String screenName;
 
     private final SimpMessagingTemplate messagingTemplate;
     private final Twitter twitter;
@@ -43,7 +43,7 @@ public class TwitterServiceSpringSocial {
 
     public List<RichTweet> getTweets() {
         List<RichTweet> richTweets = new ArrayList<>();
-        List<Tweet> tweets = twitter.timelineOperations().getUserTimeline(apiScreenName, apiCount);
+        List<Tweet> tweets = twitter.timelineOperations().getUserTimeline(screenName, count);
         for (Tweet tweet : tweets) {
             richTweets.add(new RichTweet(tweet));
         }
